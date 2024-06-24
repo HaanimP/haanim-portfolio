@@ -25,6 +25,7 @@
   }
 
   #hamburger-nav {
+    height: auto;
     display: flex;
   }
 
@@ -35,7 +36,12 @@
 
   #profile,
   .section-container {
+    height: 73vh;
     display: block;
+  }
+
+  .section__pic-container {
+    margin-top: 15% !important;
   }
 
   .arrow {
