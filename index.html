@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/aaa9727a99.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Haanim Pietersen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Haanim's Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#testimonials" onclick="toggleMenu()">Reviews</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/nimmie.png" alt="Nimmie" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Haanim Pietersen</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Haanim Pietersen LCS CV.pdf')" tab="_blank"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'" tab="_blank"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'" tab="_blank"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1_about">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+    
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/nimmie.png" alt="Profile picture" class="about-pic" />
+        </div>
+    
+        <div class="about-details-container">
+          <div class="details-container">
+            <img src="./assets/lc studio.jpg" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>April 2024 - Present<br>LC Studio<br>Intern Developer</p>
+          </div>
+    
+          <div class="details-container">
+            <img src="./assets/lifechoices.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Sept 2023 - March 2024<br>Life Choices Coding Academy<br>Certificate of Excellence in Full-Stack Web Development</p>
+          </div>
+    
+          <div class="details-container">
+            <img src="./assets/sphs.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>2018 - 2022<br>South Peninsula High School<br>National Senior Certificate</p>
+          </div>
+    
+          <div class="details-container">
+            <h3>Other Info</h3>
+            <p>
+              <i class="fa-solid fa-cake-candles"></i>: 13 - 08 - 2004<br>
+              <i class="fa-solid fa-language"></i>: English & Afrikaans<br>
+              <i class="fa-solid fa-location-dot"></i>: Pelican Park, Cape Town<br>
+              <i class="fa-solid fa-phone"></i>: 071 433 2419<br>
+              <i class="fa-solid fa-envelope"></i>: haanimpietersen@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-container">
+        <p>
+          I am Haanim Pietersen, currently an intern at LC Studio. After graduating from South Peninsula High School in 2022 and completing my studies at Life Choices Coding Academy, I have upskilled in software engineering. While my true passion lies in designing websites and front-end development, my internship experience has broadened my technical skills.<br><br>
+    
+          In my leisure time, I enjoy reading, exploring historical narratives, and engaging in activities that further my web development expertise. I value meaningful connections and am dedicated to personal and professional growth through effective communication and collaboration.<br><br>
+    
+          As I navigate the dynamic landscape of work and learning, I eagerly anticipate opportunities to expand my knowledge, build lasting relationships, and contribute positively to transformative change.
+        </p>
+      </div>
+    
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>      
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Full-Stack Web Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/html.png" alt="HTML icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/css.png" alt="CSS icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/bootstrap.png" alt="Bootstrap icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/javascript.png" alt="JavaScript icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/node.png" alt="Node.js icon" class="icon" />
+              <div>
+                <h3>Node.js</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/mysql.png" alt="MySQL icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/vue.png" alt="Vue.js icon" class="icon" />
+              <div>
+                <h3>Vue.js</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Software Engineering</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/linux.png" alt="Linux icon" class="icon" />
+              <div>
+                <h3>Linux</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/python.jpg" alt="Python icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/c++.png" alt="C++ icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+              </div>
+            </article>
+          </div>
+          <h2 class="experience-sub-title">Other Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/git.png" alt="Git icon" class="icon" />
+              <div>
+                <h3>GitHub</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/figma.png" alt="Figma icon" class="icon" />
+              <div>
+                <h3>Figma</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/weather app.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HaanimP/weather-app.git'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://weather-app-navy-nu-74.vercel.app/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/wordpress ecommerce.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SHANK Accessories</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://shankaccessories.wordpress.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/wix ecommerce.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Haanim's Closet</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://haanimpietersen.wixsite.com/my-site-3'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/wix portfolio.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Wix Portfolio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://haanimpietersen.wixsite.com/portfolio'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/portfolio.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Old Vue Portfolio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HaanimP/vue_portfolio3.git'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://vue-portfolio3.web.app/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/capstone-project.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Capstone Project</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HaanimP/capstone_project.git'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://capstoneproject-68b97.web.app/'">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>    
+    
+    <section id="testimonials">
+      <p class="section__text__p1">What People Say</p>
+      <h1 class="title">Colleague Reviews</h1>
+      <div class="experience-details-container testimonials-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"Haanim Pietersen is not only a pleasant individual to work with, but she radiates warmth and positivity where ever she goes. She is a hard-working, dedicated and intelligent person. No matter how hectic or challenging the situation, she maintains an unwavering sense of composure and always finds a way to uplift those around her. I wholeheartedly recommend her."</p>
+                <p class="testimonial-author">- Ammara Hoosen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I've had the honour of working with Haanim - she breaks barriers in IT with her expertise and resilience. Her dedication fosters inclusivity and inspires others, leaving an indelible mark on the tech landscape."</p>
+                <p class="testimonial-author">- Aakeefah Jones</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"Haanim's worth ethic is truly something worthy of praise. She excels in every task delegated to her due to her drive and determination. Though she is determined to succeed, Haanim also emphasizes team work and synergy. I've had the privilege of working with Haanim in the past and I look forward to working with her again."</p>
+                <p class="testimonial-author">- Ni-shaat Gafieldien</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"I have had the pleasure of working closely with Haanim, and I can confidently say that she is an outstanding web developer. Her technical proficiency, attention to detail, and creative approach set her apart in the field. Haanim consistently delivers high-quality work, displaying a remarkable ability to turn complex requirements into sleek and user-friendly web applications. I highly recommend Haanim for her expertise, professionalism, and dedication to excellence in web development."</p>
+                <p class="testimonial-author">- Niyaaz Daniels</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"Haanim Pietersen is a phenomenal fullstack developer, seamlessly blending creativity and technical expertise to bring innovative solutions to life. Her keen eye for detail and commitment to quality consistently elevate our projects to new heights. Beyond her professional acumen, Haanim's warm demeanor and collaborative spirit make every workday a pleasure, turning colleagues into friends and creating a truly harmonious work environment."</p>
+                <p class="testimonial-author">- Luqman Toffey</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text">"Haanim, with her exceptional work ethic and unwavering dedication, consistently stands out as a hardworking and committed classmate who sets the bar high by tirelessly striving for academic excellence and aiming for the highest marks in every undertaking. Beyond her impressive academic pursuits, she radiates positivity with her pleasant and amiable soul, making her not only a valuable asset in the pursuit of knowledge but also a delightful presence that contributes significantly to the overall camaraderie and uplifting atmosphere within the academic community."</p>
+                <p class="testimonial-author">- Unity Demas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>            
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">haanimpietersen@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/haanim-pietersen-172bb9264">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Haanim Pietersen. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
