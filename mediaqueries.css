@@ -85,11 +85,15 @@
   }
 
   .section__pic-container {
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   article {
     font-size: 1rem;
+  }
+
+  #contact {
+    background-image: url("https://i.ibb.co/60nVNBL/HD-wallpaper-grey-wall-iphone-neon-minimalist-iphone-themes-in-2022-grey-iphone-simple-iphone-iphone.jpg");
   }
 
   footer nav {
