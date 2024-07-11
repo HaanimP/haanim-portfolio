@@ -76,12 +76,7 @@
   }
 
   #profile {
-    background-image: url("https://i.ibb.co/p2msCQN/6d45f38dad7c0a9345e83b7e1df3c803.jpg");
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-    height: 93vh;
-    margin-bottom: 0;
+    height: 100vh;
   }
 
   #hamburger-nav {
@@ -94,10 +89,6 @@
 
   article {
     font-size: 1rem;
-  }
-
-  #contact {
-    background-image: url("https://i.ibb.co/60nVNBL/HD-wallpaper-grey-wall-iphone-neon-minimalist-iphone-themes-in-2022-grey-iphone-simple-iphone-iphone.jpg");
   }
 
   footer nav {
