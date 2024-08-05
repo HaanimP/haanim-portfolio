@@ -36,7 +36,7 @@
 
   #profile,
   .section-container {
-    height: 73vh;
+    height: 100vh;
     display: block;
   }
 
@@ -66,6 +66,75 @@
   .about-containers {
     margin-top: 0;
   }
+  
+  /* Updated for column display */
+  .experience-details-container {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center; /* Center align the cards */
+    gap: 2rem;
+  }
+  
+  .color-container {
+    width: 100%; /* Ensure full width in column layout */
+    background: transparent;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 2rem;
+  }
+  
+  .color-container:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .project-title {
+    margin: 1rem 0;
+    color: white;
+  }
+  
+  .color-container:hover .project-title {
+    color: #78866B;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .project-btn {
+    color: #78866B;
+    background: #fff;
+    border: 1px solid #aaa;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .project-btn:hover {
+    background-color: #78866B;
+    color: #fff;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 50px;
+    cursor: pointer;
+  }
+  
 }
 
   
