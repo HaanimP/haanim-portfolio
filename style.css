@@ -243,11 +243,10 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
-  height: 2rem;
-  color: #78866B !important; /* Apply color to font-based icons */
+  font-size: 2rem; /* Adjust size to make icons larger */
+  color: #fff !important; /* Apply color to font-based icons */
 }
 
 /* BUTTONS */
@@ -426,51 +425,10 @@ section {
   text-align: justify; /* Justify text for better readability */
 }
 
-/* Text container styles */
 .text-container p {
   color: #fff;
-  font-size: 1.1rem; /* Slightly larger font size */
-  line-height: 1.8;
-  margin-bottom: 1.5rem; /* Space between paragraphs */
-  letter-spacing: 0.5px; /* Slight letter spacing */
-  background: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 8px #78866B;
-  transition: all 0.5s ease-in-out;
-}
-
-.text-container p:hover {
-  text-shadow: 0 2px 12px #78866B; /* Enhanced shadow on hover */
-  transform: scale(1.05); /* Slightly scale text on hover */
-}
-
-/* Fade-in and slide-in animation */
-.text-container {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInSlideUp 1s ease-in-out forwards;
-}
-
-@keyframes fadeInSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Arrow animation */
-.arrow {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  font-size: 1rem;
+  line-height: 1.8; /* Slightly increased line height for easier reading */
 }
 
 /* Arrow icon for navigation */
@@ -862,7 +820,7 @@ article h3 {
 .contact-info-container p {
   font-size: 1rem;
   margin: 0;
-  color: #78866B;
+  color: #fff;
   position: relative; /* Ensure the content is above the background */
   z-index: 1;
 }
